@@ -199,6 +199,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
 endif
 
+# Apex
+$(call inherit-product, vendor/aosp/config/apex.mk)
+
 # Audio
 $(call inherit-product, vendor/aosp/config/audio.mk)
 
